@@ -20,68 +20,9 @@
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="common.css">
     <style>
-    .wrap{width: 100%; height: 100%;}
-    .hd{width: 100%; height: 50%; background: #7593ff; /* Old browsers */
-background: -moz-linear-gradient(top, #7593ff 0%, #d6d6ff 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #7593ff 0%,#d6d6ff 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #7593ff 0%,#d6d6ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7593ff', endColorstr='#d6d6ff',GradientType=0 ); /* IE6-9 */}
-.logo{ display: block;width: 160px;height: 40px; float: left; margin-left: 10px; margin-top: 10px;background-image: url("./img/logo.png");
-background-repeat: no-repeat;background-position: center center;background-size: 100% auto;}
-.top_btn{float: right;margin-top: 10px;margin-right: 10px;}
-.top_btn li{float: left;}
-.top_btn li label{display: block;width: 25px;height: 25px;background-repeat: no-repeat;background-position: center center;
-text-indent: -9999px;}
-.top_btn li.search label{background-image: url("./img/search.png");}
-.top_btn li.menu label{background-image: url("./img/btn.png");width: 32px;}
-.close{ display: block; width: 28px;height: 28px;background-image: url("./img/close_btn.png");background-size: cover;}
-.ck_item{display: none;}
-#find_nav{position: fixed;left: -110%;top: 0;z-index: 99;width: 100%;height: 100vh;background-color: #fff;transition: 0.5s;}
-#ck1:checked ~ #find_nav{ left: 0;}
-#gnb{position: fixed;right: -110%;top: 0;z-index: 99;width: 100%;height: 100vh;background-color: #fff;transition: 0.5s;}
-#ck2:checked ~ #gnb{ right: 0;}
-.frm1{clear: both;padding-top: 1.6em;width: 250px;margin: 0 auto;}
-.frm1 input{display: block;float: left;}
-.in_data{width: 200px;line-height: 32px;border-radius: 20px;border: 1px solid rgb(105, 104, 104);text-indent: 1em;}
-.frm_btn{width: 32px;height: 32px;background-color: #333;
-background-image: url("./img/search.png");
-background-position: center center;
-background-repeat: no-repeat; margin-top: 10px;
-text-indent: -9999px;
-border-radius: 20px;}
-.hash_title{clear:both; text-align: center;line-height: 4;}
-.hash{clear: both;padding: 20px;}
-.hash li{line-height: 2.4;padding-left: 20px;}
-.hash li a{color: #333;}
-#find_nav .close{float: right;margin-top: 20px;margin-right: 20px;}
-#gnb li{clear: both;line-height: 2;padding-left: 25px;}
-#gnb li a{display: block;color: #333;position: relative;}
-.sub{width: 100%;height: 0;overflow: hidden;transition: 0.5s;}
-.sub.on{height: 125px;}
-#gnb li a.dp1:after{content: "▼";position: absolute;right: 50px;top: 5px;}
-#gnb li a.dp1.on:after{content: "▲";}
-#gnb:before{content: "MENU";display: block;clear: both;width: 100%;line-height: 80px;font-size: 2em;text-align: center;border-bottom: 3px solid #eee;}
-#gnb .close{position: absolute;right: 20px;top: 20px;}
-.ft{clear: both;height: 100px;background: #333;color: #fff;font-size:0.7em;text-align: center;line-height: 1.6;padding-bottom: 15px;font-weight: 200;
-position: absolute;bottom: 0;left: 0;width: 100%;padding-top: 3px;}
-.ft_wrap{width: 230px;margin: 0 auto}
+   
     </style>
-    <script>
-    $(document).ready(function(){
-        $("#gnb a.dp1").click(function(){
-            $(".sub").removeClass("on");
-        $(this).netx(".sub").addclass("on");
-        $("#gnb a.dp1").removeClass("on");
-        $(this).addclass("on");
-        });
-        var wd = parseInt($(".vs").width());
-        $(".btn_box li").click(function(){
-            var idx = $(this).index();
-            $(".img_box").not("animated").animate({"margin-left" : wd*idx*-1+"px"}, 600);
-            $(".btn_box li").removeClass("on");
-            $(this).addClass("on");
-        });
-    });
+    <script src="main.js">
     </script>
         <style>
                 body, html{width: 100%;height: 100%;overflow: hidden;}
@@ -164,7 +105,7 @@ position: absolute;bottom: 0;left: 0;width: 100%;padding-top: 3px;}
                 </ul>
             </li>
             <li class="item3">
-                <a href="" class="dp1">풍수해보험</a>
+                <a class="dp1">풍수해보험</a>
                 <ul class="sub">
                     <li class="it1"><a href="">풍수해보험안내</a></li>
                     <li class="it2"><a href="">가입과 사고신고</a></li>
@@ -173,7 +114,7 @@ position: absolute;bottom: 0;left: 0;width: 100%;padding-top: 3px;}
                 </ul>
             </li>
             <li class="item4">
-                <a href="" class="dp1">재난심리상담</a>
+                <a class="dp1">재난심리상담</a>
                 <ul class="sub">
                     <li class="it1"><a href="">심리회복지원마당</a></li>
                     <li class="it2"><a href="">심리회복지원센터</a></li>
