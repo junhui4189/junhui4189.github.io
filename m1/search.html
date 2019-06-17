@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cashe-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="국민재난안전포털">
+    <meta name="keywrod" content="지진,재난,대피,민방위">
+    <meta name="auther" content="jang">
+    <meta name="description" content="국가 재난예방 및 대피 요령 안내, 민방위 안내">
+    <title>국민재난안전포털 모바일 웹사이트</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script></script>
+    <link rel="stylesheet" href="https://github.com/necolas/normalize.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="common.css">
+    <script src="main.js"></script>
+        <style>
+                body, html{width: 100%;height: 100%;}
+                .hd{height: 50px;position: fixed;}
+                .ft{position: fixed; bottom: 0;left: 0;z-index: 99;}
+                .page_title{text-align: center;line-height: 3;}
+                .service_lst{clear: both;overflow: scroll;padding-bottom: 140px;padding-top:1.2em; background: rgb(85, 84, 84);}
+                .service_lst li{line-height: 2.4;}
+                .service_lst li a{display: block;line-height: 4;font-size: 1.1em;text-indent: 1.6em;color: #fff;border-top: 1px solid #666;
+                border-bottom: 1px solid #111;background: rgb(85, 84, 84);}
+             </style>
+</head>
+<body>
+<!--   div.wrap>header.hd>figure.vs+nav.shortcut+footer.ft-->
+<div class="wrap">
+    <header class="hd">
+    <a href="index.html" class="logo" title="logo"></a>
+    <input type="checkbox" class="ck_item" id="ck1">
+    <input type="checkbox" class="ck_item" id="ck2">
+    <nav class="top_btn">
+        <ul>
+            <li class="search">
+                <label for="ck1">검색</label>
+            </li>
+            <li class="menu">
+                    <label for="ck2">메뉴</label>
+                </li>
+        </ul>
+    </nav>
+    <nav id="find_nav">
+        <form action="" class="frm1">
+            <input type="text" id="keyword" class="in_data" placeholder="검색어 입력">
+            <input type="submit" value="검색" class="frm_btn">
+        </form>
+        <p class="hash_title">아래의 자주 사용하는 메뉴 링크를 이용하세요</p>
+        <ul class="hash">
+            <li class="item1"><a href="sub1.html">해시메뉴1</a></li>
+            <li class="item2"><a href="sub2.html">해시메뉴2</a></li>
+            <li class="item3"><a href="sub3.html">해시메뉴3</a></li>
+            <li class="item4"><a href="sub4.html">해시메뉴4</a></li>
+            <li class="item5"><a href="sub5.html">해시메뉴5</a></li>
+        </ul>
+        <label for="ck1" class="close"></label>  
+    </nav>
+    <nav id="gnb">
+        <ul class="nav">
+            <li class="item1">
+                <a class="dp1">재난예방대비</a>
+                <ul class="sub">
+                    <li class="it1"><a href="">국민행동요령</a></li>
+                    <li class="it2"><a href="">준비점검</a></li>
+                    <li class="it3"><a href="">자율안전점검</a></li>
+                    <li class="it4"><a href="">재난훈련</a></li>
+                    <li class="it5"><a href="">비상연락망</a></li>
+                </ul>
+            </li>
+            <li class="item2">
+                <a class="dp1">민방위</a>
+                <ul class="sub">
+                    <li class="it1"><a href="">교육/훈련</a></li>
+                    <li class="it2"><a href="">민방위경보</a></li>
+                    <li class="it3"><a href="">비상시설</a></li>
+                    <li class="it4"><a href="">민방위장비</a></li>
+                    <li class="it5"><a href="">화생방</a></li>
+                </ul>
+            </li>
+            <li class="item3">
+                <a class="dp1">풍수해보험</a>
+                <ul class="sub">
+                    <li class="it1"><a href="">풍수해보험안내</a></li>
+                    <li class="it2"><a href="">가입과 사고신고</a></li>
+                    <li class="it3"><a href="">뉴스와 정보</a></li>
+                    <li class="it5"><a href="">고객서비스</a></li>
+                </ul>
+            </li>
+            <li class="item4">
+                <a class="dp1">재난심리상담</a>
+                <ul class="sub">
+                    <li class="it1"><a href="">심리회복지원마당</a></li>
+                    <li class="it2"><a href="">심리회복지원센터</a></li>
+                    <li class="it3"><a href="">자가진단</a></li>
+                    <li class="it4"><a href="">재난심리자료실</a></li>
+                </ul>
+            </li>
+            <li class="item5">
+                <a href="" class="dp1">재난현황</a>
+                <ul class="sub">
+                    <li class="it1"><a href="">재난사고발생</a></li>
+                    <li class="it2"><a href="">안전사고경보</a></li>
+                    <li class="it3"><a href="">지역상황</a></li>
+                    <li class="it4"><a href="">재난통계</a></li>
+                </ul>
+            </li>
+            <li class="item6">
+                <a href="" class="dp1">참여와 신고</a>
+                <ul class="sub">
+                    <li class="it1">국민참여</li>
+                </ul>
+            </li>
+        </ul>
+        <label for="ck2" class="close"></label>
+    </nav>
+    </header>
+    <h2 class="page_title">서비스목록</h2>
+    <ul class="service_lst">
+        <li class="item1"><a href="">서비스1</a></li>
+        <li class="item2"><a href="">서비스2</a></li>
+        <li class="item3"><a href="">서비스3</a></li>
+        <li class="item4"><a href="">서비스4</a></li>
+        <li class="item5"><a href="">서비스5</a></li>
+        <li class="item6"><a href="">서비스6</a></li>
+        <li class="item7"><a href="">서비스7</a></li>
+        <li class="item8"><a href="">서비스8</a></li>
+        <li class="item9"><a href="">서비스9</a></li>
+        <li class="item10"><a href="">서비스10</a></li>
+    </ul>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <p class="copyright">
+                    30128 세종특별자치시 정부2청사로 13(나성동)<br>
+                    홈페이지 운영/장애문의: 044-205-8462<br>
+                    자연재난 피해신고문의: 044-205-5317<br>
+                    민방위문의: 시군구청 담당자<br>
+                </p>
+                <adress class="copy">Copyright 2016 Ministry of the Interior and Safety.<br> All rights reserved</adress>
+            </div>
+        </footer>
+</div>
+</body>
+</html>
