@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cashe-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="미에로화이바">
+    <meta name="keywrod" content="현대약품,미에로화이바,건강음료">
+    <meta name="auther" content="jang">
+    <meta name="description" content="미에로화이바">
+    <title>미에로화이바 모바일 웹 사이트</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <script src="./xeicon/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="./xeicon/bootstrap.min.js"></script>
+    <script src="./fontawesome.min.js"></script>
+    <link rel="stylesheet" href="./xeicon/xeicon.min.css">
+    <link rel="stylesheet" href="./xeicon/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./font.css">
+    <style>
+    body,html{font-family: "Noto Sans KR," sans-serif;height: 100%;}
+    .logo{ display: block;width: 120px;height: 40px;margin: 0.5em auto;background-image: url("./img/logo1.png");
+background-repeat: no-repeat;background-position: center center;background-size: 100% auto;}
+.hd{position: fixed;left: 0;top: 0;width: 100%;height: 8%;z-index: 99;background: #ffc649}
+.event, .log, .sns{position: absolute;top: 15px;font-size: 0.9em;color: #fff;}
+.lst_btn{display: block;left: 1.5em;position: absolute;width: 30px;height: 30px;top: 15px;font-size: 0.9em;color: #fff;}
+.event{right: 2.9em;}
+.log{right: 1em;}
+.sns{right: 5em;}
+.lst_box, .sns_box, .log_box, .event_box{display: block;position: fixed;top: 0;width: 100%;height: 100%;z-index: 999;transition: 0.5s;}
+.lst_box{left: -110%; top: 0;}
+.lst_box.on {left: 0;}
+.sns_box{right: -110%; top: 0;}
+.sns_box.on {right: 0;}
+.log_box{left: 0; top: -110%;}
+.log_box.on{top: 0;}
+.event_box{left: 0;top: -110%;}
+.event_box.on{top: 0;}
+.lst_box{width: 100%;height: 100%;background: rgba(252, 161, 161, 0.801);}
+.log_fr{width: 100%;background: rgba(51, 51, 51, 0.788);height: 30%;}
+.login{width: 50%;height: 30%;margin: 0 auto;color: #fff;font-size: 2em;text-align: center;display: block;}
+.logg{display: block;width: 20%;height: 15%;margin: 0 auto;color: #fff;border: 2px solid #fff;border-radius: 5px;}
+.item1 img{width: 100%;height: 100%;}
+.item2 img{display: block;width: 50%;;float: left;}
+.item3 img{display: block;width: 50%;float: left;}
+.lst_status{width: 100%;height: 10%;background: rgba(51, 51, 51,);border-top: 2px solid #fff;color: #fff;font-size: 1.1em;}
+.lst_status li{width: 33.333%;height: 100%;float: left;text-align: center;font-weight: 600;}
+.main{width: 100%;height: 60%;background: rgba(255, 255, 255, 0.7);margin-top: -1px;}
+.main li{width: 100%;line-height: 3em;}
+.main li a{color: #333;font-weight: 800;margin-left: 30px;font-size: 1.2em;}
+.close{position: absolute;top: 10px;right: 10px;color: #fff;font-size: 1em;}
+.sns_box{background: rgba(51, 51, 51, 0.7);}
+.sns_lst{width: 50%;height: 15%;position: absolute;top: 10%;left: 20%;}
+.sns_lst li{width: 50%;height: 50%;float: left;}
+.sns_lst li img{width: 50%;margin-left: 30px;}
+.event_box{background: rgba(51, 51, 51, 0.7);width: 100%;height: 100%;}
+.event_box img{width: 90%;margin-left: 15px;margin-top: 60px;}
+.log_box{background: rgba(51, 51, 51, 0.7);width: 100%;height: 100%;}
+.log_box .collap_tit{color: #fff;text-align: center;}
+.ft{position: absolute;clear: both;height: 100px;width: 100%;background: #333;color: #fff;text-align: center;font-size: 0.9em;}
+.ft .gnb{width: 200px;margin: 0 auto;}
+.frm1{clear: both; padding-bottom: 50px;}
+.frm1 fieldset{border: 0;}
+.in_frm{display: block;width: 280px;clear: both;margin: 15px auto;line-height: 2;font-size: 1em;
+color: rgba(255, 255, 255, 0.7);border:2px solid rgba(255, 255, 255, 0.7);border-radius: 30px;background: rgba(255, 255, 255, 0.7);}
+.frm1 .in_frm{ color: rgba(255, 255, 255, 0.7);text-indent: 1em;}
+.btn_frm{display: block;float: left;width: 100px;line-height: 32px;text-align: center;margin: 30px;background: rgba(34, 34, 34, 0.8);color: #fff;
+border-radius: 20px;}
+.btn_fr_frame{width: 240px;margin: 30px auto;}
+.content{clear: both;padding-top: 30px;}
+.tb_con img{width: 100%;height: 100%;background-position: center;}
+.tb_title{text-align: center;color: #333;font-size: 1.2em;font-weight: 800;}
+</style>
+    <script>
+    $(document).ready(function(){
+        $(".lst_btn").click(function(){
+            $(".lst_box").addClass("on");
+        });
+        $(".lst_box .close").click(function(){
+            $(".lst_box").removeClass("on");
+        });
+        $(".sns").click(function(){
+            $(".sns_box").addClass("on");
+        });
+        $(".sns_box .close").click(function(){
+            $(".sns_box").removeClass("on");
+        });
+        $(".event").click(function(){
+            $(".event_box").addClass("on");
+        });
+        $(".event_box .close").click(function(){
+            $(".event_box").removeClass("on");
+        });
+        $(".log").click(function(){
+            $(".log_box").addClass("on");
+        });
+        $(".log_box .close").click(function(){
+            $(".log_box").removeClass("on");
+        });
+    });
+    </script>
+</head>
+<body>
+<header class="hd">
+    <button class="lst_btn">
+            <i class="xi-bars xi-2x"></i>
+    </button>
+    <a href="index.html" class="logo" title="logo"></a>
+    <button class="sns">
+            <i class="xi-share-alt xi-2x"></i>
+    </button>
+    <button class="event">
+            <i class="xi-star xi-2x"></i>
+    </button>
+    <button class="log">
+            <i class="xi-user xi-2x"></i>
+    </button>
+</header>
+<div class="lst_box">
+<div class="log_fr"><img src="" alt="">
+    <button class="close">
+        <i class="xi-close xi-2x"></i>
+    </button>
+    <button class="login">
+        <i class="xi-unlock-o"></i> 
+    </button>
+    <button class="logg">로그인</button>
+</div>
+<ul class="lst_status">
+    <li class="item1"><span class="ico"></span><span class="ico">Intro</span></li>
+    <li class="item2"><span class="ico"></span><span class="ico">Event</span></li>
+    <li class="item3"><span class="ico"></span><span class="ico">Move</span></li>
+</ul>
+<ul class="main">
+    <li class="item1"><a href="sub1.html#tab1">브랜드 소개</a></li>
+    <li class="item2"><a href="sub2.html#tab1">상품 소개</a></li>
+    <li class="item3"><a href="sub3.html#tab1">Campaign 2019</a></li>
+</ul>
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<div class="sns_box">
+<ul class="sns_lst">
+    <li class="sns1"><img src="./img/insta.png"></li>
+    <li class="sns2"><img src="./img/facebook.png"></li>
+    <li class="sns3"><img src="./img/youtube.png"></li>
+    <li class="sns4"><img src="./img/kakao.png"></li>
+</ul>
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<div class="log_box">
+    <h3 class="collap_tit">로그인</h3>
+<form action="" class="frm1">
+    <fieldset>
+    <input type="text" id="m_id" placeholder="아이디 입력" class="in_frm" name="m_id">
+    <input type="password" id="m_pw" placeholder="암호 입력" class="in_frm" name="m_pw">
+    <input type="password" id="m_pw2" placeholder="암호 확인" class="in_frm" name="m_pw2">
+</fieldset>
+<fieldset class="btn_fr">
+    <input type="submit" class="btn_frm" value="로그인">
+    <input type="reset" class="btn_frm" value="취소">
+</fieldset>
+</form>
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<div class="event_box">
+<img src="./img/event.jpg" alt="" class="event_pic">
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<div class="content">
+    <div class="tb_box" id="">
+        <a href="#tab1" class="tb_btn">브랜드 소개</a>
+        <div class="tb_con">
+            <h3 class="tb_title">브랜드 소개</h3>
+            <img src="./img/intro.png" alt="" class="info">
+        </div>
+    </div>
+</div>
+</section>
+<footer class="ft">
+    <nav class="gnb">
+        <ul class="menu">
+            <li class="tiem1"></li>
+            <li class="tiem2"></li>
+        </ul>
+        <p class="copyright">미에로화이바
+            현대약품
+
+        </p>
+        <address class="copy">2018 MIERO FIBER.All Rights Reserved</address>
+    </nav>
+</footer>
+</body>
+</html>
