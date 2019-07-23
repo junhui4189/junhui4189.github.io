@@ -1,0 +1,78 @@
+	@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+	@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+	* { margin:0;	 padding:0; }
+	body, html { width:100%; height:100%; font-family: 'Nanum Gothic', sans-serif; }
+	nav a { font-family: 'Noto Sans KR', sans-serif; }
+	ul { list-style:none; }
+	a { text-decoration:none; }
+	#wrap { width:100%;  height:200%; }
+	.page { width:100%;  height:50%; position:relative; }
+	#page1 { background-image:url("../img/g70_visual1.jpg"); background-size:100% 100%; }
+	.page_wrap { width:96%; height:88%; position:absolute; border:2px solid #804033;
+		border-bottom:0px; bottom:0px; left:2%; }
+	.page_title1 { font-size:70px;  padding-top:23%; line-height:88px; color:#fff;
+		text-align:center; font-weight:100; }
+	.page_date { font-size:30px; line-height:70px; color:#fff;
+		text-align:center; font-weight:100; }
+	.link { margin:40px auto; width:830px; }
+	.link li { margin:20px; float:left; }
+	.link li a { display:block; padding:0px 12px; color:#fff; line-height:48px; border:1px solid #804033; font-size:14px; }
+	.scroll { width:100px; margin:0px auto; color:#fff; cursor:pointer;  }
+	.scroll_txt { display:block; text-align:center; font-size:13px; line-height:52px;  }
+	.scroll .line { display:block; width:50%; height:0px; border-right:1px solid #fff; 
+		transition:0.6s; }
+	.scroll:hover .line  { height:40px; }
+	.row1, .row2 { clear:both; width:100%; }
+	#pro1 { background-color:#f1f1f1; }
+	#pro ul { width:1000px; margin:0 auto; padding-top:20px; padding-bottom:20px; }
+	#pro ul li { float:left; width:33%; position:relative; 
+		background-position:center center; background-repeat:no-repeat; 
+			background-size:90%; height:300px; cursor:pointer; border-right:1px solid #ececec; }
+	#pro ul li:last-child { border-right:0; }
+	.pro_title { position:absolute; line-height:50px;  top:8%; width:100%;
+		text-indent:30px; }
+	.more2 { position:absolute; top:25%; color:#804033; font-size:14px; left:10%; 
+		text-decoration:underline; opacity:0; transition:0.5s; }
+	#pro ul li:hover .more2 { opacity:1; }	
+	#pro ul li:hover { background-size:50%; }
+	#pro ul li.item1 { background-image:url("../img/genesis-eq900-main.png"); }
+	#pro ul li.item2 { background-image:url("../img/genesis-g80-main.png"); }
+	#pro ul li.item3 { background-image:url("../img/genesis-g80sport-main.png"); }
+	#pro ul li.item1:hover { background-image:url("../img/genesis-eq900-main-on.png"); }
+	#pro ul li.item2:hover { background-image:url("../img/genesis-g80-main-on.png"); }
+	#pro ul li.item3:hover { background-image:url("../img/genesis-g80sport-main-on.png"); }
+	.ra { display:none; }
+	#news { clear:both; width:1000px; height:460px; margin:0 auto; overflow:hidden; position:relative; }
+	.page_title { width:100%; line-height:80px;  text-align:center; font-size:32px;
+		color:#804033; font-weight:100; }
+	.page_title:after { content:" "; display:block; background-color:#804033; }
+	.img_box { width:4000px; height:300px; margin-left:0; transition:0.8s; }
+	.img_box li { float:left; width:300px; margin-right:33px; height:auto; }
+	.img_box li a { display:block; }
+	.img_box li:nth-child(3n) { margin-right:34px; }
+	.img_box li img { display:block; width:300px; height:auto; }
+	.figcaption { color:#804033; }
+	.new_title { font-size:15px; font-weight:300; line-height:48px; } 
+	.new_coment { font-size:12px; font-weight:300; line-height:20px; } 
+	.btn_wrap { width:1000px; position:absolute; top:20%; left:0; z-index:90; }
+	.btn_box { width:4000px; height:200px;  }
+	.btn_box li { position:relative; width:1000px; float:left; height:200px; }
+	.btn_box li label { display:block; width:80px; height:100px; background:rgba(0,0,0,0.5); position:absolute; top:0px; cursor:pointer; line-height:100px; color:#fff; font-size:40px; font-weight:100; text-align:center; z-index:90; }
+	.btn_box li label.left { left:1px; }
+	.btn_box li label.right { right:34px; }
+	#ra1:checked ~ .img_box { margin-left:0; }
+	#ra2:checked ~ .img_box { margin-left:-1000px; }
+	#ra3:checked ~ .img_box { margin-left:-2000px; }
+	#ra4:checked ~ .img_box { margin-left:-3000px; }
+	#ra1:checked ~ .btn_wrap .btn_box { margin-left:0; }
+	#ra2:checked ~ .btn_wrap .btn_box { margin-left:-1000px; }
+	#ra3:checked ~ .btn_wrap .btn_box { margin-left:-2000px; }
+	#ra4:checked ~ .btn_wrap .btn_box { margin-left:-3000px; }
+	.btn_box2 { clear:both; height:20px; padding-top:30px; width:62px; margin:0 auto;}
+	.btn_box2 li { float:left; 	margin-right:4px; border-radius:5px; width:9px; height:9px; 
+		border-radius:5px; background:#acacac; border:1px solid #fff;  }
+	.btn_box2 li label { display:block; width:8px; height:8px;  cursor:pointer; }
+	#ra1:checked ~ .btn_box2 li:nth-child(1) { border:1px solid #804033; background:#804033;}
+	#ra2:checked ~ .btn_box2 li:nth-child(2) { border:1px solid #804033; background:#804033; }
+	#ra3:checked ~ .btn_box2 li:nth-child(3) { border:1px solid #804033; background:#804033; }
+	#ra4:checked ~ .btn_box2 li:nth-child(4) { border:1px solid #804033; background:#804033; }

@@ -1,0 +1,41 @@
+#hd { width:100%; height:100px; position:fixed; background:rgba(0,0,0,0.6); z-index:999;
+		top:0; left:0;	transition:0.5s; border-bottom:1px solid #fff; box-shadow:0px 60px 60px #222; }
+	#hd:hover { height:330px; }
+	.hd_wrap { width:1000px; margin:0 auto; }
+	.logo { display:block; float:left;	 padding:12px; padding-top:22px; }
+	#gnb { margin-left:10px; float:left; margin-top:10px; }
+	#gnb li { float:left;  width:100px; }
+	#gnb a { display:block; color:#fff; height:32px; line-height:32px; }
+	#gnb a:hover { color:#804033; }
+	#gnb > ul > li > a { padding-top:22px;  text-align:center; }
+	#gnb > ul > li:hover > a { color:#804033; border-bottom:2px solid #804033; }
+	#gnb li .sub { display:none; position:absolute; z-index:990; top:66px; }
+	#gnb li:hover .sub { display:block; }
+	#gnb li .sub li { clear:both; height:40px; width:200px; }
+	#gnb li .sub a { font-size:13px; color:#fff; line-height:40px; }
+	#gnb li .sub a:hover { color:#fff; text-decoration:underline; }
+	#gnb li .sub.item2 { left:0; width:1000px; padding-left:150px; padding-top:30px; }
+	#gnb li .sub.item2 ul { width:1000px; height:80px; }
+	#gnb li .sub.item2 li { float:left; clear:none; width:300px; height:120px; }
+	#gnb li .sub.item2 li a { padding:15px; }
+	#search { float:left; margin-left:20px; width:150px; margin-top:40px; }
+	#search #keyword { display:block; background-color:transparent; width:100px; outline:0;
+		border:0; border-bottom:1px solid #333; height:18px; float:left; 
+		background-image:url("../img/ico_search.png"); background-repeat:no-repeat; 
+		text-indent:20px; color:#fff; }
+	#search #keyword:focus { border-bottom:1px solid #fff; }
+	#search .btn { display:block; width:40px; float:left; background-color:transparent; color:#fff;
+		outline:0; border:0;	text-transform:uppercase; font-size:10px; }
+	#quicklink { float:left; margin-left:20px; width:100px; margin-top:26px; height:40px; overflow:hidden; cursor:pointer; transition:0.7s; border:2px solid transparent; }
+	.q_title { line-height:40px; text-align:center; color:#ffffff; font-size:14px;  }
+	#quicklink:hover { height:130px; border:2px solid #fff; }
+	#quicklink a { display:block; height:30px; line-height:30px; width:100px; text-align:left; 
+		color:#fff; font-size:13px; text-indent:10px; }
+	.verti_line { display:block; width:2px; height:32px; background:#fff; float:left;
+		margin-left:30px; margin-top:30px; }
+	.lang_ck { display:none; }
+	#lang { float:right; width:100px; margin-top:26px; height:40px; overflow:hidden; cursor:pointer; transition:0.7s; border:2px solid transparent; }
+	.lang_title { line-height:40px; text-align:center; color:#ffffff; font-size:14px; }
+	#lang label { display:block; width:30px;	 line-height:30px; width:100px; text-align:left; 
+		color:#fff; font-size:13px; text-indent:10px; cursor:pointer; }
+	#lang:hover { height:100px; border:2px solid #fff; }
