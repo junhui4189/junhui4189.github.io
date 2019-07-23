@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scaleable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AIG</title>
+    <link rel="shortcuticon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="font.css">
+    <style>
+    *{margin: 0;padding: 0;}
+    body, html{width: 100%;-ms-overflow-style: none;font-size: 14px;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    input, button, label{outline: none;border: none;background-image: none;background-color: transparent;}
+    .hd{position: fixed;width: 100%; height: 100px;background: #fff;top: 0;left: 0;z-index: 99;}
+    .page{clear: both;width: 100%;height: 100vh;position: relative;overflow: hidden;box-sizing: border-box;}
+    .logo { display:block; width:100px; height:auto; float:left; margin-left:20em; margin-top:1.5em;}
+    .logo img {display:block; width:100%;}
+    #gnb { float:left; margin-left:40em; display:block;margin-top: 2.5em;}
+    #gnb li{ float:left; width:160px; position:relative; }
+    #gnb li a{color: #333;font-size: 1.4em;font-weight: bold;}
+    #gnb li a:hover{color: #c30;cursor: pointer;transition: 0.2s;}
+    .lang {display: block;float: left;text-align: center;line-height: 45px;height: 50px;margin-top: 2em;width:250px;}
+    .lang li {display: block;float: left;font-size: 1em;font-weight: bold;position: relative;width: 50px;}
+    .lang .item1{display: block;border: 1px solid #333;background: #333;height: 50px;color: #fff;border-radius: 60em;text-align: center;}
+    .lang .item2{display: block;border: 1px solid rgb(212, 212, 212);background: rgb(212, 212, 212);height: 50px;color: #333;border-radius: 60em;text-align: center;}
+    .lang .item3{display: block;border: 1px solid rgb(212, 212, 212);background: rgb(212, 212, 212);height: 50px;color: #333;border-radius: 60em;text-align: center;}
+    .lang .item4{display: block;border: 1px solid rgb(212, 212, 212);background: rgb(212, 212, 212);height: 50px;color: #333;border-radius: 60em;text-align: center;}
+    .page{clear: both;width: 100%;height: 100%;position: relative;overflow: hidden;box-sizing: border-box;}
+    .img_box{width: 400%;height: 100%;opacity: 1;}
+    .img_box li{width: 25%;height: 100vh;background-position: center center;
+    background-repeat: no-repeat;background-size: cover;}
+    .img_box li.item1{background-image: url("./img/main.png");}
+    .img_box li.item2{background-image: url("./img/main2.png");}
+    .img_box li.item3{background-image: url("./img/main3.png");}
+    .img_box li.item4{background-image: url("./img/main4.png");} 
+    .vs{ width:100%; height:100%; position:relative; clear:both;}
+    .vs_tit{padding-top: 3em;text-align: center;font-size: 4em;color: #fff;}    
+    .vs_com{text-align: center;font-size: 2em;font-weight: bold;color: #fff;}
+    .vs_tit1{font-size: 4em;color: #fff;padding-top: 4em;padding-left: 3em;}
+    .vs_tit2{font-size: 3em;color: #fff;padding-top: 8em;text-align: center;}
+    .vs_com2{font-size: 2em;color: #fff;text-align: center;}
+    .vs_com1{font-size: 2em;color: #fff;font-weight: bold;text-align: center;}
+    .more{display: block;float: left;width: 160px;height: 40px;text-align: center;border: 2px solid #fff;font-size: 1.6em;
+    color: #fff;margin-left: 40em;margin-top: 3em;cursor: pointer;}
+    .more:hover{background: #fff;color: #333;transition: 1s;}   
+    .ft {clear:both; padding:3rem 0rem; background-color:#333;color: #999;}
+    .ft .address{font-size: 1.1em;font-weight: bold;padding-left: 20em;}
+    .ft .address1{font-size: 1.1em;font-weight: bold;padding-left: 20em;}
+    .ft .address2{font-size: 1.1em;font-weight: bold;padding-left: 20em;}
+    .ft li span{color: #fff;font-weight: bold;}
+    .copy{color: #999999;font-size: 1.1em;font-weight: bold;padding-left: 20em;padding-top: 2em;}   
+    </style>
+    <script src="./jquery-latest.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function(){
+        $(document).ready(function(){
+    var wh = $(window).height();
+    $(".page").each(function(index){
+        $(this).attr("data-val", index*wh);
+    });
+    $(".page").on("mousewheel DOMMouseScroll", function(e){
+        var secPos = parseInt($(this).attr("data-val"));
+        if(e.originalEvent.wheelDelta >= 0){
+            $("html, body").stop().animate({scrollTop:secPos - wh},600);
+            return false;
+        } else if(e.originalEvent.wheelDelta < 0){
+            $("html, body").stop().animate({scrollTop:secPos + wh},600);
+            return false;
+        };
+    });
+    });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="hd">
+            <a href="index.html" class="logo">
+            <img src="./img/logo.png" alt="logo">
+            </a>
+                <nav id="gnb">
+                    <ul class="gnb_lst">
+                            <li><a href="">보험상품</a></li>
+                            <li><a href="">마이 AIG</a></li>
+                            <li><a href="">보상서비스</a></li>
+                            <li><a href="">소비자광장</a></li>
+                    </ul>
+                </nav>
+                <div class="lang">
+                    <ul class="lang_lst">
+                        <li class="item1">KR</li>
+                        <li class="item2">EN</li>
+                        <li class="item3">JP</li>
+                        <li class="item4">CH</li>
+                    </ul>
+                </div>
+        </header>
+        <div class="top_nav">
+            <ul class="top_btn">
+                <li class="nav_box">
+                </li>
+            </ul>
+        </div>
+        <div class="page">
+            <figure class="vs">
+            <ul class="img_box">
+                <li class="item1">
+                    <div class="tit_box">
+                        <h3 class="vs_tit">Hospital Accident Plan</h3>
+                        <p class="vs_com">여행 타입별로 선택하는
+                                합리적인 맞춤 보상플랜!</p>
+                    </div>
+                </li>
+                <li class="item2">
+                <h3 class="vs_tit1">American International Group, Inc., AIG</h3>
+                <p class="vs_com1">아메리카 인터네셔널 그룹</p>
+                </li>
+                <li class="item3">
+                </li>
+                <li class="item4">
+                    <span></span>
+                    <h3 class="vs_tit2">For nearly 100 years,</h3>
+                    <p class="vs_com2">we’ve prepared you for what’s next in life</p>
+
+                    <p class="more">READ MORE</p>
+                </li>
+            </ul>
+        </div>
+    </figure>
+        <footer class="ft">
+            <ul class="ft_nav">
+                <li class="address"><span>AIG손해보험주식회사</span> 대표이사 민홍기</li>
+                <li class="address2"><span>글로벌전략본부</span>  (070326) 서울시 영등포구 국제금융로 10 국제금융센터 Two IFC 27층</li>
+                <li class="address1"><span>사업자등록번호</span>  101-86-67365, </li>
+            </ul>
+            <p class="copy">Copyrightⓒ2019 American Inerantion Group, Inc. All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
