@@ -1,130 +1,140 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scaleable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>문서의 제목</title>
-    <!-- 파비콘 및 메타포 아이콘 적용-->
-<!-- 가장 작은 형태의 16x16 크기의 ico-->
-<link rel="shortcut icon"href="favcon16.ico">
-<!-- 가장 작은 형태의 16x16 크기의 png-->
-<link rel="shortcut icon"href="favcon16.png" type="images/x-icon">
-<!--일반 앱형태의 아이콘 설정-->
-<link rel="icon"href="favcon16.ico">
-<link rel="icon"href="favcon16.png"sizes="16x16">
-<link rel="icon"href="favcon32.png"sizes="32x32">
-<link rel="icon"href="favcon48.png"sizes="48x48">
-<link rel="icon"href="favcon64.png"sizes="64x64">
-<link rel="icon"href="favcon128.png"sizes="128x128">
-<!--아이폰 고해상도용 파비콘 152x152-->
-<link rel="apple-touch-icon-precomposed"href="favcon152.png">
-<!--인터넷 익스플로러용 타일 아이콘 144x144-->
-<meta nmae="msapplication-TileColor"content="#FFFFFF">
-<meta name="msapplication-Tileimage"content="favcon144.png">
-<!--모바일 웹앱 문서정보에 대한 설정-->
-<meta name="title" content="프론트엔드개발자">
-<meta name="auther" content="장준희">
-<meta name="url" content="www.naver.com">
-<meta name="description" content="프론트엔드 개발자의 사이트 개발하기">
-<meta name="keywords" content="프론트엔드,개발자,이야기,html5,css,javascript,jQuery">
-<!-- 애플 어플 문서 정보 설정 -->
-<meta name="apple-mobile-web-app-title"content="프론트엔드개발자 이야기 ">
-<meta name="apple-mobile-web-app-capable"content="yes">
-<!--소설에 문서정보 노출 설정  -->
-<meta itemprop="name"content="프론트엔드">
-<meta itemprop="description"content="프론트엔드개발자의 사이트 개발하기">
-<meta itemprop="image"content="favcon256.png">
-<!-- 페이스북에 노출 설정 -->
-<meta property="fb:app_id"content="app_id">
-<!-- 페이스북,블로그 등의 크롤링으로 열면 미리보기 노출 -->
-<meta property="ogitype" content="Website">
-<meta property="ogititle" content="프론트엔드 개발자 이야기">
-<meta property="ogiurl" content="index.html">
-<meta property="ogidescription" content="프론트엔드개발자의 사이트 개발하기">
-<style>
-*{margin: 0;padding: 0;}
-body,html{width: 100%;height: 100%;}
-ul{list-style: none;}
-a{text-decoration: none;}
-label, input, button{outline: 0;border: 0;background-color:transparent;}
-.hd{width: 100%;height: 100px;position: fixed; top: 0;left: 0;background-color: rgb(59, 59, 59);z-index: 999;}
-.gnb li{width: 25%; float: left;}
-.gnb li a{color: #fff;font-size: 1.2em;display: block;text-align: center;line-height: 100px;cursor: pointer;}
-.wrap{width: 100%;height: 100%;}
-.page{width: 100%;height: 100%;position: relative; clear: both;}
-.page_title{line-height: 3;text-align: center;}
-.lst{clear: both; width: 1280px;margin: 0 auto; padding-top: 60px;}
-.lst li{float: left; margin-right: 10px; width: 300px;}
-</style>
+    <title>PORTFOLIO</title>
+    <link rel="shortcuticon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="font.css">
+    <style>
+    *{margin: 0;padding: 0;}
+    body, html{width: 100%;-ms-overflow-style: none;font-size: 14px;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    input, button, label{outline: none;border: none;background-image: none;background-color: transparent;}
+    .hd{position: fixed;width: 100%; height: 100px;background: rgba(255, 255, 255, 0);top: 0;left: 0;z-index: 99;}
+    .page{clear: both;width: 100%;height: 100vh;position: relative;overflow: hidden;box-sizing: border-box;}
+    .logo { display:block; width:100px; height:auto; float:left; margin-left:20em; margin-top:1.5em;}
+    .logo img {display:block; width:100%;}
+    #gnb { float:left; margin-left:40em; display:block;margin-top: 2.5em;}
+    #gnb li{ float:left; width:160px; position:relative; }
+    #gnb li a{color: #333;font-size: 1.4em;font-weight: bold;}
+    #gnb li a:hover{color: #FFF;cursor: pointer;transition: 0.2s;}
+    .page{clear: both;width: 100%;height: 100%;position: relative;overflow: hidden;box-sizing: border-box;}
+    .img_box{width: 400%;height: 100%;opacity: 1;}
+    .img_box li{width: 25%;height: 100vh;background-position: center center;
+    background-repeat: no-repeat;background-size: cover;}
+    .img_box li.item1{background: #777;opacity: 1;}
+    .img_box li.item2{background-image: url();}
+    .item2 img{display: block;position: relative;width: 200px;height: 250px;margin: 0 auto;margin-top: 3em;}
+    .img_box li.item3{background-image: url();}
+    .img_box li.item4{background-image: url();} 
+    .img_box li.item5{background-image: url("https://placehold.it/1280x1080/777");}
+    .vs{ width:100%; height:100%; position:relative; clear:both;}
+    .vs_tit{padding-top: 3em;text-align: center;font-size: 5em;color: #fff;font-weight: italic;}    
+    .vs_com{text-align: center;font-size: 2em;font-weight: bold;color: #fff;padding-top: 1em;}
+    .vs_com3{text-align: center;font-size: 1.2em;}
+    .vs_tit1{font-size: 4em;;padding-top: 1em;text-align: center;}
+    .vs_tit2{font-size: 4em;padding-top: 1em;text-align: center;}
+    .vs_tit3{font-size: 4em;padding-top: 1em;text-align: center;}
+    .vs_tit4{font-size: 4em;padding-top: 3em;padding-left: 4em;}
+    .vs_tit4 img{}
+    .vs_txt{text-align: center;border: 10px solid rgb(221, 221, 1);width: 100px;height: 100px;background: rgb(221, 221, 1);border-radius: 60em;
+    font-size: 2em;margin-left: 32em;color: #fff;}
+    .vs_com4{font-size: 1em;padding-left: 10em;}
+    .vs_com2{font-size: 1em;text-align: center;}
+    .vs_com1{font-size: em;font-weight: bold;text-align: center;}
+    .intro{font-size: 22px;line-height: 4em;padding-left: 7em;} 
+    .ft {clear:both; padding:10rem 0rem; background-color:#333;color: #999;}
+    .ft .address{font-size: 1.1em;font-weight: bold;text-align: center;}
+    .ft li span{color: #fff;font-weight: bold;}
+    .copy{color: #999999;font-size: 1.1em;font-weight: bold;text-align: center;padding-top: 2em;}
+    .works{text-align: center;line-height: 10em;}   
+    </style>
+    <script src="./jquery-latest.js" type="text/javascript"></script>
+    <script>
+        var wh = $(window).height();
+        var wd = $(window).width();
+        $(".page").each(function(index){
+            $(this).attr("data-val", index*wh);
+        });
+        $(".page").on("mousewheel DOMMouseScroll", function(e){
+            var secPos = parseInt($(this).attr("data-val"));
+            if(e.originalEvent.wheelDelta >= 0){
+                $("html, body").stop().animate({scrollTop:secPos - wh});
+                return false;
+            } else if(e.originalEvent.wheelDelta < 0) {
+                $("html, body").stop().animate({scrollTop:secPos + wh});
+                return false;
+            }
+        }); 
+    </script>
 </head>
 <body>
-    <!-- div.wrap>header.hd>nav.gnb>ul.menu>li.item$*4>a -->
-    <div class="wrap">
+    <div id="wrap">
         <header class="hd">
-            <nav class="gnb">
-                <ul class="menu">
-                    <li class="item1"><a class="act">About me</a></li>
-                    <li class="item2"><a class="act">Working</a></li>
-                    <li class="item3"><a class="act">Portfolio</a></li>
-                    <li class="item4"><a class="act">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="index.html" class="logo">
+            <img src="https://placehold.it/500x300/333" alt="logo">
+            </a>
+                <nav id="gnb">
+                    <ul class="gnb_lst">
+                            <li><a href="">PROFILE</a></li>
+                            <li><a href="">WOKRS</a></li>
+                            <li><a href="">GALLERY</a></li>
+                            <li><a href="">CONTACT</a></li>
+                    </ul>
+                </nav>
         </header>
-        <!-- div.page#page$*4>h2.page_title{페이지제목}+(ul.lst>li.item$*8>a>img[src="http://placehold.it/300x200/333"]) -->
-        <div class="page" id="page1">
-            <h2 class="page_title">About me</h2>
-            <ul class="lst">
-                <li class="item1"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item2"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item3"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item4"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item5"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item6"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item7"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item8"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
+        <div class="top_nav">
+            <ul class="top_btn">
+                <li class="nav_box">
+                </li>
             </ul>
         </div>
-        <div class="page" id="page2">
-            <h2 class="page_title">Working</h2>
-            <ul class="lst">
-                <li class="item1"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item2"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item3"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item4"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item5"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item6"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item7"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item8"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
+        <div class="page">
+            <figure class="vs">
+            <ul class="img_box">
+                <li class="item1">
+                    <div class="tit_box">
+                        <h3 class="vs_tit">HELLO, THERE! :)</h3>
+                        <p class="vs_com">I AM JUNHEE-JANG, A NEW WEB DESIGNER<br>THIS IS MY PORTFOLIO</p>
+                    </div>
+                </li>
+                <li class="item2">
+                <h3 class="vs_tit1">PROFILE</h3>
+                <p class="vs_com1">ㅡ</p>
+                <h2 class="vs_txt">ABOUT ME</h2>
+                <img src="./img/img.jpg" alt="증명사진">
+                <p class="name"></p>
+                </li>
+                <li class="item3">
+                <h3 class="vs_tit3">WORKS</h3>
+                <p class="vs_com3">제가 쌓아온 기술 목록 입니다.</p>
+                <p class="works">PHOTOSHOP <br> ILLUSTRATOR <br> HTML/CSS3 <br>JAVA/JQUERY</p>
+                </li>
+                <li class="item4">
+                    <span></span>
+                    <h3 class="vs_tit2">GALLERY</h3>
+                    <p class="vs_com2">프레임 워크 및 그래픽스 툴을 이용한 작업과, 모바일 웹&앱 디자인<br>포트폴리오를 소개합니다.</p>
+                    <li class="item5">
+                    <h3 class="vs_tit4">CONTACT</h3>
+                        <img src="" alt="">
+                        <p class="vs_com4">제작자 연락처에 대한 정보 및 홈페이지 정보에 대한 연락처 입니다.</p>
+                        <h3 class="intro">Mobile : +82 10 4189 0635<br> Location : 150, Daejeon Seogu Daedokdaero, South Korea
+                        <br>E-mail : junhui4189@daum.net</h3>
+                    </li>
+                </li>
             </ul>
         </div>
-        <div class="page" id="page3">
-            <h2 class="page_title">Portfolio</h2>
-            <ul class="lst">
-                <li class="item1"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item2"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item3"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item4"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item5"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item6"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item7"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item8"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
+    </figure>
+        <footer class="ft">
+            <ul class="ft_nav">
+                <li class="address"><span>궁금하신 것이 있으시면 언제든지 연락 주세요.</span></li>
+
             </ul>
-        </div>
-        <div class="page" id="page4">
-            <h2 class="page_title">Contact</h2>
-            <ul class="lst">
-                <li class="item1"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item2"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item3"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item4"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item5"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item6"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item7"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-                <li class="item8"><a href=""><img src="http://placehold.it/300x200/333" alt=""></a></li>
-            </ul>
-        </div>
-    </div>  
+            <p class="copy">JUNHEE-JANG 2019. All Rights Reserved</p>
+        </footer>
+    </div>
 </body>
 </html>
