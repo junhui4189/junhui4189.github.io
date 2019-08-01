@@ -7,6 +7,8 @@
     <title>PORTFOLIO</title>
     <link rel="shortcuticon" href="" type="image/x-icon">
     <script src="./jquery-latest.js"></script>
+    <link rel="stylesheet" href="./xeicon/xeicon.min.css">
+    <link rel="stylesheet" href="./xeicon/jquery.min.js">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <style>
@@ -17,113 +19,87 @@
     input, button, label{outline: none;border: none;background-image: none;background-color: transparent;}
     .hd{position: fixed;width: 100%; height: 100px;background: rgba(255, 255, 255, 0);top: 0;left: 0;z-index: 99;}
     .page{clear: both;width: 100%;height: 100vh;position: relative;overflow: hidden;box-sizing: border-box;}
-    .logo { display:block; float:left; margin-left:6em; margin-top:10px;font-family: "Satisfy";color: #444;
+    .logo { display:block; float:left; margin-left:6em; margin-top:10px;font-family: "Satisfy";color: #fff;
     font-size: 1.6em;}
     .logo:hover{color: goldenrod;transition: 0.2s;}
     #gnb { float:left; margin-left:40em; display:block;margin-top: 2.5em;}
     #gnb li{ float:left; width:160px; position:relative; }
-    #gnb li a{color: #444;font-size: 1.4em;font-weight: bold;}
+    #gnb li a{color: #383a3f;font-size: 1.4em;font-weight: bold;}
     #gnb li a:hover{color:goldenrod;cursor: pointer;transition: 0.2s;}
     .page{clear: both;width: 100%;height: 100vh;position: relative;overflow: hidden;box-sizing: border-box;}
     #page4 li{float: left;line-height: 3em;}
     .img_box{width: 400%;height: 100%;}
     .img_box li{width: 25%;height: 100vh;background-position: center center;
     background-repeat: no-repeat;background-size: cover;}
-    .img_box li.item1{background-image: url("./img/bg.png");}
+    .img_box li.item1{background-image: url("./img/main2.png");}
     .img_box li.item2{background-image: url();}
     .item2 img{display: block;position: relative;width: 200px;height: 250px;margin: 0 auto;margin-top: 3em;}
     .img_box li.item3{background-image: url();}
     .img_box li.item4{background-image: url();} 
-    .img_box li.item5{background-image:}
+    #page5{background-image: url("./img/contact.png");background-repeat: no-repeat;background-size: cover;width: 100%;height: 100vh;}
     .vs{width: 100%;height: 100%;clear: both;position: relative;}
-    .vs_tit{padding-top: 3em;text-align: center;font-size: 5em;color: #fff;font-weight: 400;font-family:"Kalam"}    
-    .vs_com{text-align: center;font-size: 2em;font-weight: 400;color: #fff;padding-top: 1em;font-family: "Kalam";}
+    .vs_tit{padding-top: 3em;text-align: center;font-size: 7em;color: #fff;font-weight: 400;font-family:"Kalam"}    
+    .vs_com{text-align: center;font-size: 2em;font-weight: 400;color: #fff;padding-top: 3em;font-family: "Kalam";}
     .vs_com3{text-align: center;font-size: 1.2em;}
     .vs_tit1{font-size: 4em;;padding-top: 1em;text-align: center;}
     .vs_tit2{font-size: 4em;padding-top: 2em;margin-left: 15em;}
     .vs_tit3{font-size: 4em;padding-top: 1em;text-align: center;}
-    .vs_tit4{font-size: 4em;padding-top: 3em;padding-left: 4em;}
+    .vs_tit4{font-size: 4em;padding-top: 3em;padding-left: 4em;color: goldenrod;}
     #page4 span{display: block;position: relative;padding-left: 61em;}
     .vs_txt{text-align: center;border: 10px solid goldenrod;width: 100px;height: 100px;background: goldenrod;border-radius: 60em;
     font-size: 2em;margin-left: 32em;color: #fff;}
-    .vs_com4{font-size: 1em;padding-left: 17em;}
+    .vs_com4{font-size: 1em;padding-left: 17em;color: goldenrod;}
     .vs_com2{font-size: 1em;padding-left: 46em;}
     .vs_com1{text-align: center;font-size: 1em;}
-    .intro{font-size: 22px;line-height: 4em;padding-left: 7em;} 
-    .ft {clear:both; padding:10rem 0rem; background-color:#333;color: #999;}
+    .intro{font-size: 22px;line-height: 3em;padding-left: 7em;color: goldenrod;cursor: pointer;} 
+    .intro:hover{color: #fff;cursor: pointer;transition: 3s;}
+    .ft {clear:both; padding:6rem 0rem; background-color:#0f0b0b;color: #999;}
     .ft .address{font-size: 1.1em;font-weight: bold;text-align: center;}
-    .ft li span{color: #fff;font-weight: bold;}
-    .copy{color: #999999;font-size: 1.1em;font-weight: bold;text-align: center;padding-top: 2em;}
+    .ft li span{color: #999;font-weight: bold;}
+    .copy{color: #999999;font-size: 1.1em;font-weight: bold;text-align: center;padding-top: 4em;}
     .works{text-align: center;line-height: 10em;}   
-    .more{padding-left: 17em;}
+    .more{padding-left: 17em;color: goldenrod;}
+    #page5 button a{font-size: 3em;display: block;float: left;color: goldenrod;padding-left: 4em;}
+    #page5 button a:hover{color: #fff;transition: 0.6s;}
+    .ft_nav button{display: block;margin: 0 auto;font-size: 4em;color: #999;cursor: pointer;}
+    .ft_nav button:hover{border: 1px solid #999;height: 100px;width: 150px;transition: 0.5s;}
+    .btn_box { width: 80px; height: 40px; position:relative;margin-left: 65em;}
+    .btn_box li { float:left; width: 20px; height: 40px; position:relative; cursor:pointer; }
+    .btn_box li button { display:block; position:absolute; top:11px; left:6px; transition:0.5s; border-radius:3px; width: 8px; height: 18px; background:goldenrod; cursor:pointer; }
+    .btn_box li.on button { height: 32px; top: 4px; background:#333;
+     }
+    .tit_box { width: 100%; height: 40px; line-height: 40px;}
+    .tit_box li { width: 100%; height: 40px; line-height: 40px;display:none;}
+    .tit_box li.on { display:block; }
+    .tit_box li span { font-size:18px; font-weight:bold;}
+    .ex{font-size: 11px;color: goldenrod;margin-left: 23em;}
+    .ex a{color: goldenrod;}
+    .ex a:hover{color: #fff;transition: 2s;}
 @-webkit-keyframes 
 load { 0% {
-stroke-dashoffset:0
-}
+stroke-dashoffset:0}
 }
 @-moz-keyframes 
 load { 0% {
-stroke-dashoffset:0
-}
+stroke-dashoffset:0}
 }
 @keyframes 
 load { 0% {
-stroke-dashoffset:0
-}
+stroke-dashoffset:0}
 }
 .progress {
-  position: relative;
-  display: inline-block;
-  padding:2rem;
-  text-align: center;
-}
-.progress>li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #93A2AC;
-  font-weight: 100;
-  margin: 8rem;
-}
-.progress>li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2rem;
-  font-weight: 400;
-}
-.progress>li:after {
-  content: attr(data-percent);
-  position: absolute;
-  width: 100%;
-  top: 3.7rem;
-  left: 0;
-  font-size: 2rem;
-  text-align: center;
-}
-.progress svg {
-  width: 10rem;
-  height: 10rem;
-}
-.progress svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-}
-.progress svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: rgba(255, 255, 255, 0.9);
-  -webkit-animation: load 10s;
-  -moz-animation: load 10s;
-  -o-animation: load 10s;
-  animation: load 10s;
-}
+  position: relative;display: inline-block;padding:2rem;text-align: center;}
+.progress>li {display: inline-block;position: relative;text-align: center;
+  color: #93A2AC;font-weight: 100;margin: 8rem;}
+.progress>li:before {content: attr(data-name); position: absolute;width: 100%; bottom: -2rem;
+  font-weight: 400;}
+.progress>li:after { content: attr(data-percent);position: absolute;width: 100%; top: 3.7rem; left: 0;
+font-size: 2rem;text-align: center;}
+.progress svg {width: 10rem;height: 10rem;}
+.progress svg:nth-child(2) { position: absolute;left: 0;top: 0;transform: rotate(-90deg);-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);-ms-transform: rotate(-90deg);}
+.progress svg:nth-child(2) path {fill: none;stroke-width: 25;stroke-dasharray: 629;stroke: rgba(255, 255, 255, 0.9);
+-webkit-animation: load 10s;-moz-animation: load 10s;-o-animation: load 10s;animation: load 10s;}
     </style>
     <script>
     $(document).ready(function(){
@@ -141,6 +117,7 @@ stroke-dashoffset:0
             return false;
         };
     });
+    
 });
     </script>
 </head>
@@ -152,6 +129,7 @@ stroke-dashoffset:0
             </a>
                 <nav id="gnb">
                     <ul class="gnb_lst">
+                        <li><a href="#page1">Main</a></li>
                             <li><a href="#page2">PROFILE</a></li>
                             <li><a href="#page3">WOKRS</a></li>
                             <li><a href="#page4">GALLERY</a></li>
@@ -170,8 +148,8 @@ stroke-dashoffset:0
             <ul class="img_box">
                 <li class="item1">
                     <div class="tit_box">
-                        <h3 class="vs_tit">HELLO, THERE! :)</h3>
-                        <p class="vs_com">I AM JUNHEE-JANG, A NEW UI/UX DESIGNER<br>THIS IS MY PORTFOLIO</p>
+                        <h3 class="vs_tit">HELLO, THERE!</h3>
+                        <p class="vs_com">I AM JUNHEE-JANG, A NEW UI/UX DESIGNER<br>THIS IS MY PORTFOLIO :)</p>
                     </div>
                 </li>
             </ul>
@@ -191,7 +169,7 @@ stroke-dashoffset:0
                 <li class="item3">
                 <h3 class="vs_tit3">WORKS</h3>
                 <p class="vs_com3">――――――――――――――</p>
-                <h1 class="vs_com1">제가 구현 가능한 기술 목록 입니다.</h1>
+                <h1 class="vs_com1">구현 가능한 기술 목록 입니다.</h1>
                 <ul class="progress">
                     <li data-name="Photoshop" data-percent="80%"> <svg viewBox="-10 -10 220 220">
                       <g fill="none" stroke-width="9" transform="translate(100,100)">
@@ -203,7 +181,7 @@ stroke-dashoffset:0
                         <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
                       </g>
                       </svg> <svg viewBox="-10 -10 220 220">
-                      <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="700"></path>
+                      <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="600"></path>
                       </svg> </li>
                     <li data-name="Illustrator" data-percent="80%"> <svg viewBox="-10 -10 220 220">
                       <g fill="none" stroke-width="9" transform="translate(100,100)">
@@ -283,6 +261,18 @@ stroke-dashoffset:0
                     <h3 class="vs_tit2">GALLERY</h3>
                     <span>――――――――――――――</span>
                     <p class="vs_com2">프레임 워크 및 그래픽스 툴을 이용한 작업과, 모바일 웹&앱 디자인 포트폴리오를 소개합니다.</p>
+                    <ul class="btn_box">
+                            <li class="item1 on"><button></button></li>
+                            <li class="item2"><button></button></li>
+                            <li class="item3"><button></button></li>
+                        </ul>    
+                        <ul class="tit_box">
+                            <li class="item1 on"><span class="tit">Mobile</span></li>
+                            <li class="item2"><span class="tit">Desktop</span></li>
+                            <li class="item3"><span class="tit">ResponsiveWep</span></li>
+                            
+                        </ul>
+                    <!-- 모바일, 데스크탑, 반응형 나머지 완성 후 목업이미지포함 태그 넣기 li>a>item.img -->
                 </li>
                 </div>
                 <div class="page" id="page5">
@@ -292,13 +282,17 @@ stroke-dashoffset:0
                         <p class="vs_com4">제작자 에 대한 연락처 입니다.</p>
                         <h3 class="intro">Mobile : +82 10 4189 0635<br> Location : 150, Daejeon Seogu Daedeogdaelo, South Korea
                         <br>E-mail : junhui4189@daum.net</h3>
+                        <button><a href="https://www.facebook.com/people/%EC%9E%A5%EC%A4%80%ED%9D%AC/100003096026019"><i class="xi-facebook"></i></a></button>
+                        <button><a href="http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-"><i class="xi-kakaotalk"></i></a></button>
+                        <h2 class="ex">(카카오톡의 경우 로그인 또는 qr코드를 입력하셔야 연동됩니다.)<br><a href="http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-">http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-</a></h2>
+                        <!-- 폼요소 선택자 넣기 -->
                     </li>
         </div>
     </figure>
         <footer class="ft">
             <ul class="ft_nav">
-                <li class="address"><span>궁금하신 것이 있으시면 언제든지 연락 주세요.</span></li>
-
+                <li class="address"><span>궁금하신 것이 있으시면 언제든지 연락 주세요.</span> </li>
+                    <button><i class="xi-mail"></i></button>
             </ul>
             <p class="copy">JUNHEE-JANG 2019. All Rights Reserved</p>
         </footer>
