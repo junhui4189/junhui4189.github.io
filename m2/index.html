@@ -1,310 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PORTFOLIO</title>
-    <link rel="shortcuticon" href="" type="image/x-icon">
-    <script src="./jquery-latest.js"></script>
+    <meta http-equiv="Cashe-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="미에로화이바">
+    <meta name="keywrod" content="현대약품,미에로화이바,건강음료">
+    <meta name="auther" content="jang">
+    <meta name="description" content="미에로화이바">
+    <title>미에로화이바 모바일 웹 사이트</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <script src="./xeicon/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="./xeicon/bootstrap.min.js"></script>
+    <script src="./fontawesome.min.js"></script>
     <link rel="stylesheet" href="./xeicon/xeicon.min.css">
-    <link rel="stylesheet" href="./xeicon/jquery.min.js">
-    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./xeicon/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./font.css">
     <style>
-    *{margin: 0;padding: 0;}
-    body, html{width: 100%;-ms-overflow-style: none;font-size: 14px;}
-    ul{list-style: none;}
-    a{text-decoration: none;}
-    input, button, label{outline: none;border: none;background-image: none;background-color: transparent;}
-    .hd{position: fixed;width: 100%; height: 100px;background: rgba(255, 255, 255, 0);top: 0;left: 0;z-index: 99;}
-    .page{clear: both;width: 100%;height: 100vh;position: relative;overflow: hidden;box-sizing: border-box;}
-    .logo { display:block; float:left; margin-left:6em; margin-top:10px;font-family: "Satisfy";color: #fff;
-    font-size: 1.6em;}
-    .logo:hover{color: goldenrod;transition: 2s;}
-    #gnb { float:left; margin-left:40em; display:block;margin-top: 2.5em;}
-    #gnb li{ float:left; width:160px; position:relative; }
-    #gnb li a{color: #383a3f;font-size: 1.4em;font-weight: bold;}
-    #gnb li a:hover{color:goldenrod;cursor: pointer;transition: 0.2s;}
-    .page{clear: both;width: 100%;height: 100vh;position: relative;overflow: hidden;box-sizing: border-box;}
-    #page4 li{float: left;line-height: 3em;}
-    .img_box{width: 400%;height: 100%;}
-    .img_box li{width: 25%;height: 100vh;background-position: center center;
-    background-repeat: no-repeat;background-size: cover;}
-    .img_box li.item1{background-image: url("./img/main2.png");}
-    .img_box li.item2{background-image: url();}
-    .item2 img{display: block;position: relative;width: 250px;height: 300px;margin: 0 auto;margin-top: 3em;}
-    .img_box li.item3{background-image: url();}
-   #page4 li{background: rgb(211, 211, 211);background-size: 50px;}
-    #page5{background-image: url("./img/contact.png");background-repeat: no-repeat;background-size: cover;width: 100%;height: 100vh;}
-    .vs{width: 100%;height: 100%;clear: both;position: relative;}
-    .vs_tit{padding-top: 3em;text-align: center;font-size: 7em;color: #fff;font-weight: 400;font-family:"Kalam"}    
-    .vs_com{text-align: center;font-size: 2em;font-weight: 400;color: #fff;padding-top: 3em;font-family: "Kalam";}
-    .vs_com3{text-align: center;font-size: 1.2em;}
-    .vs_tit1{font-size: 4em;;padding-top: 1em;text-align: center;}
-    .vs_tit2{font-size: 4em;padding-top: 2em;margin-left: 15em;}
-    .vs_tit3{font-size: 4em;padding-top: 1em;text-align: center;}
-    .vs_tit4{font-size: 4em;padding-top: 3em;padding-left: 4em;color: goldenrod;}
-    #page4 span{display: block;position: relative;padding-left: 61em;}
-    .vs_txt{text-align: center;border: 10px solid gold;width: 100px;height: 100px;background: gold;border-radius: 60em;
-    font-size: 2em;margin-left: 32em;color: #fff;}
-    .vs_com4{font-size: 1em;padding-left: 17em;color: goldenrod;}
-    .vs_com2{font-size: 1em;padding-left: 46em;}
-    .vs_com1{text-align: center;font-size: 1em;}
-    .intro{font-size: 22px;line-height: 3em;padding-left: 7em;color: goldenrod;cursor: pointer;} 
-    .intro:hover{color: #fff;cursor: pointer;transition: 3s;}
-    .ft {clear:both; padding:6rem 0rem; background-color:#010101;color: #999;}
-    .ft .address{font-size: 1.1em;font-weight: bold;text-align: center;}
-    .ft li span{color: #999;font-weight: bold;}
-    .copy{color: #999999;font-size: 1.1em;font-weight: bold;text-align: center;padding-top: 4em;}
-    .works{text-align: center;line-height: 10em;}   
-    .more{padding-left: 17em;color: goldenrod;}
-    #page5 button a{font-size: 3em;display: block;float: left;color: goldenrod;padding-left: 4em;}
-    #page5 button a:hover{color: #fff;transition: 0.6s;}
-    .ft_nav button{display: block;margin: 0 auto;font-size: 4em;color: #999;cursor: pointer;}
-    .ft_nav button:hover{border: 1px solid #999;height: 100px;width: 150px;transition: 0.5s;}
-     .name_box{text-align: center;font-size: 15px;line-height: 30px;}
-     .infobox{font-size: 15px;text-align: center;margin-top: 2em;}
-    .ex{font-size: 11px;color: goldenrod;margin-left: 23em;}
-    .ex a{color: goldenrod;}
-    .ex a:hover{color: #fff;transition: 2s;}
-    .mobile li{float: left;display: block;margin-left: 10em;}
-    .mobile .it1 img{width: 150px;height: 200px;}
-    .mobile .it2 img{width: 150px;height: 200px;}
-    .mobile .it3 img{width: 250px;height: 200px;}
-    .mobile .it4 img{width: 250px;height: 200px;}
-    .mobile .it5 img{width: 250px;height: 200px;}
-    .mobile .it6 img{width: 250px;height: 200px;margin-left: 30em}
-    .mobile .it7 img{width: 250px;height: 200px;}
-    .mobile .nb{margin-left: 40em;font-size: 1.5em;}
-
-
-@-webkit-keyframes 
-load { 0% {
-stroke-dashoffset:0}
-}
-@-moz-keyframes 
-load { 0% {
-stroke-dashoffset:0}
-}
-@keyframes 
-load { 0% {
-stroke-dashoffset:0}
-}
-.progress {
-  position: relative;display: inline-block;padding:2rem;text-align: center;}
-.progress>li {display: inline-block;position: relative;text-align: center;
-  color: #93A2AC;font-weight: 100;margin: 8rem;}
-.progress>li:before {content: attr(data-name); position: absolute;width: 100%; bottom: -2rem;
-  font-weight: 400;}
-.progress>li:after { content: attr(data-percent);position: absolute;width: 100%; top: 3.7rem; left: 0;
-font-size: 2rem;text-align: center;}
-.progress svg {width: 10rem;height: 10rem;}
-.progress svg:nth-child(2) { position: absolute;left: 0;top: 0;transform: rotate(-90deg);-webkit-transform: rotate(-90deg);
--moz-transform: rotate(-90deg);-ms-transform: rotate(-90deg);}
-.progress svg:nth-child(2) path {fill: none;stroke-width: 25;stroke-dasharray: 629;stroke: rgba(255, 255, 255, 0.9);
--webkit-animation: load 10s;-moz-animation: load 10s;-o-animation: load 10s;animation: load 10s;}
-    </style>
+    body,html{font-family: "Noto Sans KR," sans-serif;height: 100%;}
+    .logo{ display: block;width: 120px;height: 40px;margin: 0.5em auto;background-image: url("./img/logo1.png");
+background-repeat: no-repeat;background-position: center center;background-size: 100% auto;}
+.hd{position: fixed;left: 0;top: 0;width: 100%;height: 8%;z-index: 99;background: #ffc649;}
+.event, .log, .sns{position: absolute;top: 15px;font-size: 0.9em;color: #fff;}
+.lst_btn{display: block;left: 1.5em;position: absolute;width: 30px;height: 30px;top: 15px;font-size: 0.9em;color: #fff;}
+.event{right: 2.9em;}
+.log{right: 1em;}
+.sns{right: 5em;}
+.lst_box, .sns_box, .log_box, .event_box{display: block;position: fixed;top: 0;width: 100%;height: 100%;z-index: 999;transition: 0.5s;}
+.lst_box{left: -110%; top: 0;}
+.lst_box.on {left: 0;}
+.sns_box{right: -110%; top: 0;}
+.sns_box.on {right: 0;}
+.log_box{left: 0; top: -110%;}
+.log_box.on{top: 0;}
+.event_box{left: 0;top: -110%;}
+.event_box.on{top: 0;}
+.lst_box{width: 100%;height: 100%;background: #ffc649}
+.log_fr{width: 100%;background: #333;height: 30%;}
+.login{width: 50%;height: 30%;margin: 0 auto;color: #fff;font-size: 2em;text-align: center;display: block;}
+.logg{display: block;width: 20%;height: 15%;margin: 0 auto;color: #fff;border: 2px solid #fff;border-radius: 5px;}
+.item1 img{width: 100%;height: 100%;}
+.item2 img{display: block;width: 50%;;float: left;}
+.item3 img{display: block;width: 50%;float: left;}
+.lst_status{width: 100%;height: 10%;background: rgba(51, 51, 51,);border-top: 2px solid #fff;color: #fff;font-size: 1.1em;}
+.lst_status li{width: 33.333%;height: 100%;float: left;text-align: center;font-weight: 600;}
+.main{width: 100%;height: 60%;background: rgba(255, 255, 255, 0.7);margin-top: -1px;}
+.main li{width: 100%;line-height: 3em;}
+.main li a{color: #333;font-weight: 800;margin-left: 30px;font-size: 1.2em;}
+.close{position: absolute;top: 10px;right: 10px;color: #fff;font-size: 1em;}
+.sns_box{background: rgba(51, 51, 51, 0.7);}
+.sns_lst{width: 50%;height: 15%;position: absolute;top: 10%;left: 20%;}
+.sns_lst li{width: 50%;height: 50%;float: left;}
+.sns_lst li img{width: 50%;margin-left: 30px;}
+.event_box{background: rgba(51, 51, 51, 0.7);width: 100%;height: 100%;}
+.event_box img{width: 90%;margin-left: 15px;margin-top: 60px;}
+.log_box{background: rgba(51, 51, 51, 0.7);width: 100%;height: 100%;}
+.log_box .collap_tit{color: #fff;text-align: center;}
+.ft{position: absolute;clear: both;height: 100px;width: 100%;background: #333;color: #fff;text-align: center;font-size: 0.9em;}
+.ft .gnb{width: 200px;margin: 0 auto;}
+.frm1{clear: both; padding-bottom: 50px;}
+.frm1 fieldset{border: 0;}
+.in_frm{display: block;width: 280px;clear: both;margin: 15px auto;line-height: 2;font-size: 1em;
+color: rgba(255, 255, 255, 0.7);border:2px solid rgba(255, 255, 255, 0.7);border-radius: 30px;background: rgba(255, 255, 255, 0.7);}
+.frm1 .in_frm{ color: rgba(255, 255, 255, 0.7);text-indent: 1em;}
+.btn_frm{display: block;float: left;width: 100px;line-height: 32px;text-align: center;margin: 30px;background: rgba(34, 34, 34, 0.8);color: #fff;
+border-radius: 20px;}
+.btn_fr_frame{width: 240px;margin: 30px auto;}
+</style>
     <script>
     $(document).ready(function(){
-    var wh = $(window).height();
-    $(".page").each(function(index){
-        $(this).attr("data-val", index*wh);
+        $(".lst_btn").click(function(){
+            $(".lst_box").addClass("on");
+        });
+        $(".lst_box .close").click(function(){
+            $(".lst_box").removeClass("on");
+        });
+        $(".sns").click(function(){
+            $(".sns_box").addClass("on");
+        });
+        $(".sns_box .close").click(function(){
+            $(".sns_box").removeClass("on");
+        });
+        $(".event").click(function(){
+            $(".event_box").addClass("on");
+        });
+        $(".event_box .close").click(function(){
+            $(".event_box").removeClass("on");
+        });
+        $(".log").click(function(){
+            $(".log_box").addClass("on");
+        });
+        $(".log_box .close").click(function(){
+            $(".log_box").removeClass("on");
+        });
     });
-    $(".page").on("mousewheel DOMMouseScroll", function(e){
-        var secPos = parseInt($(this).attr("data-val"));
-        if(e.originalEvent.wheelDelta >= 0){
-            $("html, body").stop().animate({scrollTop:secPos - wh},600);
-            return false;
-        } else if(e.originalEvent.wheelDelta < 0){
-            $("html, body").stop().animate({scrollTop:secPos + wh},600);
-            return false;
-        };
-    });
-});
     </script>
 </head>
-<body style="font-family: Kalam">
-    <div id="wrap">
-        <header class="hd">
-            <a href="index.html" class="logo">
-            <p class="logo">jaNg</p>
-            </a>
-                <nav id="gnb">
-                    <ul class="gnb_lst">
-                        <li><a href="#page1">Main</a></li>
-                            <li><a href="#page2">PROFILE</a></li>
-                            <li><a href="#page3">WOKRS</a></li>
-                            <li><a href="#page4">GALLERY</a></li>
-                            <li><a href="#page5">CONTACT</a></li>
-                    </ul>
-                </nav>
-        </header>
-        <div class="top_nav">
-            <ul class="top_btn">
-                <li class="nav_box">
-                </li>
-            </ul>
-        </div>
-        <div class="page" id="page1">
-            <figure class="vs">
-            <ul class="img_box">
-                <li class="item1">
-                    <div class="tit_box">
-                        <h3 class="vs_tit">HELLO, THERE!</h3>
-                        <p class="vs_com">I AM JUNHEE-JANG, A NEW UI/UX DESIGNER<br>THIS IS MY PORTFOLIO :)</p>
-                    </div>
-                </li>
-            </ul>
-            </div>
-            <div class="page" id="page2">
-                <li class="item2">
-                <h3 class="vs_tit1">PROFILE</h3>
-                <p class="vs_com1">――――――――――――――</p>
-                <h2 class="vs_txt">ABOUT ME</h2>
-                <img src="./img/img.jpg" alt="증명사진">
-                <p class="name_box">Name: 장준희 <br>
-                    Birth: 1996 , 04 ,04 <br>
-                    Address : 대전광역시 서구 갈마2동<br>
-                    Phone : 010 - 4189 - 0635
-                    </p>
-                    <h1 class="infobox">웹 지식에 대해 백지로 시작한 상태였지만,<br>
-                    열심히 배운것을 토대로 삼아 힘차게 나아갈 꿈을<br>
-                  가지고 있는 "웹 디자이너" 입니다.</h1>
-                </li>
-            </div>
-            <div class="page" id="page3">
-                <li class="item3">
-                <h3 class="vs_tit3">WORKS</h3>
-                <p class="vs_com3">――――――――――――――</p>
-                <h1 class="vs_com1">구현 가능한 기술 목록 입니다.</h1>
-                <ul class="progress">
-                    <li data-name="Photoshop" data-percent="80%"> <svg viewBox="-10 -10 220 220">
-                      <g fill="none" stroke-width="9" transform="translate(100,100)">
-                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                      </g>
-                      </svg> <svg viewBox="-10 -10 220 220">
-                      <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="600"></path>
-                      </svg> </li>
-                    <li data-name="Illustrator" data-percent="80%"> <svg viewBox="-10 -10 220 220">
-                      <g fill="none" stroke-width="9" transform="translate(100,100)">
-                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                      </g>
-                      </svg> <svg viewBox="-10 -10 220 220">
-                      <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="547"></path>
-                      </svg> </li>
-                    <li data-name="HTML5" data-percent="78%"> <svg viewBox="-10 -10 220 220">
-                      <g fill="none" stroke-width="12" transform="translate(100,100)">
-                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                      </g>
-                      </svg> <svg viewBox="-10 -10 220 220">
-                      <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="550"></path>
-                      </svg> </li>
-                      <li data-name="Css3" data-percent="80%"> <svg viewBox="-10 -10 220 220">
-                        <g fill="none" stroke-width="9" transform="translate(100,100)">
-                          <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                          <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                          <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                          <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                          <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                          <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                      </svg> <svg viewBox="-10 -10 220 220">
-                      <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="610"></path>
-                      </svg> </li>
-                    <li data-name="Java/JQuery" data-percent="58%"> <svg viewBox="-10 -10 220 220">
-                      <g fill="none" stroke-width="6" transform="translate(100,100)">
-                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                      </g>
-                      </svg> <svg viewBox="-10 -10 220 220">
-                      <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="364"></path>
-                      </svg> </li>
-                  </ul>
-                  <svg width="0" height="0">
-                  <defs>
-                    <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
-                      <stop stop-color="#618099"/>
-                      <stop offset="100%" stop-color="#8e6677"/>
-                    </linearGradient>
-                    <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
-                      <stop stop-color="#8e6677"/>
-                      <stop offset="100%" stop-color="#9b5e67"/>
-                    </linearGradient>
-                    <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
-                      <stop stop-color="#9b5e67"/>
-                      <stop offset="100%" stop-color="#9c787a"/>
-                    </linearGradient>
-                    <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
-                      <stop stop-color="#9c787a"/>
-                      <stop offset="100%" stop-color="#817a94"/>
-                    </linearGradient>
-                    <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
-                      <stop stop-color="#817a94"/>
-                      <stop offset="100%" stop-color="#498a98"/>
-                    </linearGradient>
-                  </defs>
-                  </svg>
-            </div>
-            <div class="page" id="page4">
-                <li class="item4">
-                    <h3 class="vs_tit2">GALLERY</h3>
-                    <span>――――――――――――――</span>
-                    <p class="vs_com2">프레임 워크 및 그래픽스 툴을 이용한 작업과, 모바일 웹&앱 디자인 포트폴리오를 소개합니다.</p>
-                        <ul class="mobile" data-group="1">
-                          <h3 class="nb">01.Mobile Web & Responsive Web</h3>
-                          <li class="it1"><a href="https://junhui4189.github.io/m1/"><img src="./img/mweb1.jpg" alt=""></a>
-                          <li class="it2"><a href="https://junhui4189.github.io/m2/"><img src="./img/mweb2.jpg" alt=""></a>
-                          <li class="it3"><a href="https://junhui4189.github.io/genesis/"><img src="./img/desk.jpg" alt=""></a>
-                          <li class="it4"><a href="http://junhui4189.cafe24.com/"><img src="./img/cafe24.jpg" alt=""></a>
-                            <li class="it5"><a href="https://junhui4189.github.io/r1/"><img src="./img/rwp1.jpg" alt=""></a>
-                              <li class="it6"><a href="https://junhui4189.github.io/r6/"><img src="./img/rwp2.jpg" alt=""></a>
-                                <li class="it7"><a href="https://junhui4189.github.io/r9/"><img src="./img/rwp3.jpg" alt=""></a>
-                          </ul>
-
-                    <!-- 모바일, 데스크탑, 반응형 나머지 완성 후 목업이미지포함 태그 넣기 li>a>item.img -->
-                </li>
-                </div>
-                <div class="page" id="page5">
-                    <li class="item5">
-                    <h3 class="vs_tit4">CONTACT</h3>
-                    <p class="more">――――――――――――――</p>
-                        <p class="vs_com4">제작자 에 대한 연락처 입니다.</p>
-                        <h3 class="intro">Mobile : +82 10 4189 0635<br> Location : 150, Daejeon Seogu Daedeogdaelo, South Korea
-                        <br>E-mail : junhui4189@daum.net</h3>
-                        <button><a href="https://www.facebook.com/people/%EC%9E%A5%EC%A4%80%ED%9D%AC/100003096026019"><i class="xi-facebook"></i></a></button>
-                        <button><a href="http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-"><i class="xi-kakaotalk"></i></a></button>
-                        <h2 class="ex">(카카오톡의 경우 로그인 또는 QR코드를 입력하셔야 연동됩니다.)<br><a href="http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-">http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-</a></h2>
-                        <!-- 폼요소 선택자 넣기 -->
-                    </li>
-                    
-        </div>
-    </figure>
-        <footer class="ft">
-            <ul class="ft_nav">
-                <li class="address"><span>궁금하신 것이 있으시면 언제든지 연락 주세요.</span> </li>
-                    <button><i class="xi-mail"></i></button>
-            </ul>
-            <p class="copy">JUNHEE-JANG 2019. All Rights Reserved</p>
-        </footer>
+<body>
+<header class="hd">
+    <button class="lst_btn">
+            <i class="xi-bars xi-2x"></i>
+    </button>
+    <a href="index.html" class="logo" title="logo"></a>
+    <button class="sns">
+            <i class="xi-share-alt xi-2x"></i>
+    </button>
+    <button class="event">
+            <i class="xi-star xi-2x"></i>
+    </button>
+    <button class="log">
+            <i class="xi-user xi-2x"></i>
+    </button>
+</header>
+<div class="lst_box">
+<div class="log_fr"><img src="" alt="">
+    <button class="close">
+        <i class="xi-close xi-2x"></i>
+    </button>
+    <button class="login">
+        <i class="xi-unlock-o"></i> 
+    </button>
+    <button class="logg">로그인</button>
+</div>
+<ul class="lst_status">
+    <li class="item1"><span class="ico"></span><span class="ico">Intro</span></li>
+    <li class="item2"><span class="ico"></span><span class="ico">Event</span></li>
+    <li class="item3"><span class="ico"></span><span class="ico">Move</span></li>
+</ul>
+<ul class="main">
+    <li class="item1"><a href="sub1.html#tab1">브랜드 소개</a></li>
+    <li class="item2"><a href="sub2.html#tab2">상품 소개</a></li>
+    <li class="item3"><a href="sub3.html#tab3">Campaign 2019</a></li>
+</ul>
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<div class="sns_box">
+<ul class="sns_lst">
+    <li class="sns1"><img src="./img/insta.png"></li>
+    <li class="sns2"><img src="./img/facebook.png"></li>
+    <li class="sns3"><img src="./img/youtube.png"></li>
+    <li class="sns4"><img src="./img/kakao.png"></li>
+</ul>
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<div class="log_box">
+    <h3 class="collap_tit">로그인</h3>
+<form action="login.html" class="frm1">
+    <fieldset>
+    <input type="id" id="m_id" placeholder="아이디 입력" class="in_frm" name="m_id">
+    <input type="password" id="m_pw" placeholder="암호 입력" class="in_frm" name="m_pw">
+    <input type="password" id="m_pw2" placeholder="암호 확인" class="in_frm" name="m_pw2">
+</fieldset>
+<fieldset class="btn_fr">
+    <input type="submit" class="btn_frm" value="로그인">
+    <input type="reset" class="btn_frm" value="취소">
+</fieldset>
+</form>
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<div class="event_box">
+<img src="./img/event.jpg" alt="" class="event_pic">
+<button class="close">
+        <i class="xi-close xi-2x"></i>
+</button>
+</div>
+<ul class="ico_lst">
+    <li class="item1">
+        <img src="./img/main.jpg" alt="" class="ico">
+        <h3 class="ico_tit"></h3>
+        <p class="ico_com"></p>
+    </li>
+    <li class="item2">
+        <img src="./img/main1.png" alt="" class="ico">
+        <h3 class="ico_tit"></h3>
+        <p class="ico_com"></p>
+    </li>
+    <li class="item3">
+        <img src="./img/main2.jpg" alt="" class="ico">
+        <h3 class="ico_tit"></h3>
+        <p class="ico_com"></p>
+    </li>
+</ul>
+<section class="mv_page">
+    <h3 class="sec_tit"></h3>
+    <div id="mv_frm">
+        <iframe width="375" height="300" src="https://www.youtube.com/embed/AAt4l5jQYPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+</section>
+<footer class="ft">
+    <nav class="gnb">
+        <ul class="menu">
+            <li class="tiem1"></li>
+            <li class="tiem2"></li>
+        </ul>
+        <p class="copyright">미에로화이바
+            현대약품
+
+        </p>
+        <address class="copy">2018 MIERO FIBER.All Rights Reserved</address>
+    </nav>
+</footer>
 </body>
 </html>

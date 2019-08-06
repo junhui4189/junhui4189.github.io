@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>서브문서2의 제목</title>
+    <!-- 파비콘 및 메타포 아이콘 적용-->
+<!-- 가장 작은 형태의 16x16 크기의 ico-->
+<link rel="shortcut icon"href="./img/favcon16.ico">
+<!-- 가장 작은 형태의 16x16 크기의 png-->
+<link rel="shortcut icon"href="favcon16.png" type="images/x-icon">
+<!--일반 앱형태의 아이콘 설정-->
+<link rel="icon"href="./img/favcon16.ico">
+<link rel="icon"href="./img/favcon16.png"sizes="16x16">
+<link rel="icon"href="./img/favcon32.png"sizes="32x32">
+<link rel="icon"href="./img/favcon48.png"sizes="48x48">
+<link rel="icon"href="./img/favcon64.png"sizes="64x64">
+<link rel="icon"href="./img/favcon128.png"sizes="128x128">
+<!--아이폰 고해상도용 파비콘 152x152-->
+<link rel="apple-touch-icon-precomposed"href="./img/favcon152.png">
+<!--인터넷 익스플로러용 타일 아이콘 144x144-->
+<meta nmae="msapplication-TileColor"content="#FFFFFF">
+<meta name="msapplication-Tileimage"content="./img/favcon144.png">
+<!--모바일 웹앱 문서정보에 대한 설정-->
+<meta name="title" content="프론트엔드개발자">
+<meta name="auther" content="장준희">
+<meta name="url" content="www.naver.com">
+<meta name="description" content="프론트엔드 개발자의 사이트 개발하기">
+<meta name="keywords" content="프론트엔드,개발자,이야기,html5,css,javascript,jQuery">
+<!-- 애플 어플 문서 정보 설정 -->
+<meta name="apple-mobile-web-app-title"content="프론트엔드개발자 이야기 ">
+<meta name="apple-mobile-web-app-capable"content="yes">
+<!--소설에 문서정보 노출 설정  -->
+<meta itemprop="name"content="프론트엔드">
+<meta itemprop="description"content="프론트엔드개발자의 사이트 개발하기">
+<meta itemprop="image"content="favcon256.png">
+<!-- 페이스북에 노출 설정 -->
+<meta property="fb:app_id"content="app_id">
+<!-- 페이스북,블로그 등의 크롤링으로 열면 미리보기 노출 -->
+<meta property="ogitype" content="Website">
+<meta property="ogititle" content="프론트엔드 개발자 이야기">
+<meta property="ogiurl" content="index.html">
+<meta property="ogidescription" content="프론트엔드개발자의 사이트 개발하기">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="hd.css">
+<link rel="stylesheet" href="ft.css">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="main.js"></script>
+<script src="slider.js"></script>
+<script src="ft.js"></script>
+<script>
+</script>
+<style>
+    #local { position:fixed; z-index:90; width:20%; min-height:100%; 
+    top:0px; left:-18%; background:#333; color:#fff; transition:0.5s; 
+    padding-top: 100px; }
+    #local:hover { left:0; }    
+    #content { width:80%; float:right; }
+    #vs { text-align:center; }
+    #vs img { display:block; padding-top: 60px; width:900px; margin:0 auto; }
+    #lnb { border-top:2px solid #fff; }
+    #lnb li { line-height:2; }
+    #lnb li a { color:#fff; font-size:1.4em; display:block; text-indent:2em; }
+    #lnb li a:hover { color:#26c; }
+    .breadcrumb { background:#ccc; border-bottom:3px solid #333; }
+    .cur { text-align:left; padding-right:20px; }
+    .cur a { color:#333; padding-left:24px; background-image:url("./img/home2.png"); background-position:0px center; background-repeat:no-repeat; }
+    .cur span:before { content:">"; padding:0px 10px; }
+    .page { height:100vh; clear:both; }
+    .more { position:absolute; top:10%; right:10%; z-index:50; 
+    border-radius:24px; line-height:40px; padding:0px 15px; background:#333; color:#fff; }    
+
+    .page_title { text-align:center; }
+    .form_in { width:900px; margin:0 auto; border-top:2px solid #333; }
+    .field { height:60px; border-bottom:1px solid #333; }
+    .field label { line-height:60px; display:block; width:150px; float:left; text-indent:2em; }
+    .field .data_f { display:block; float:left; height:32px; 
+    border:1px solid #333; width:650px; margin-top: 14px; text-indent:1em;    }
+    .field .data_f2 { display:block; width:300px; height:32px; float:left; margin-top:14px; border:1px solid #333; text-indent:1em; }
+    .frm_div { display:block; width:40px; text-align:center; float:left; line-height:60px; }
+    .frm_ra { display:none; }
+    .frm_ra + label:before { content:""; display:block; width:20px; height:20px; margin-top:20px; margin-left:20px; border:1px solid #2c8; border-radius:20px; float:left; background:transparent; }
+    .frm_ra:checked + label:before { background:#2c8; }
+    .frm_btn { display:block; width:180px; height:32px; margin-right: 50px; margin-top:12px; background:#333; color:#fff; text-align:center; float:left; border-radius:5px; }
+    </style>
+</head>
+<body>
+<header class="hd">
+    <div class="h100_wrap">
+        <a href="index.html" class="logo">로고</a>
+        <nav id="gnb">
+            <ul class="menu">
+                <li class="item1">
+                    <a href="sub1.html" class="dp1">메뉴1</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="sub1.html#page1">서브메뉴11</a></li>
+                        <li class="sb_item2"><a href="sub1.html#page2">서브메뉴12</a></li>
+                        <li class="sb_item3"><a href="sub1.html#page3">서브메뉴13</a></li>
+                        <li class="sb_item4"><a href="sub1.html#page4">서브메뉴14</a></li>
+                    </ul> 
+                </li>
+                <li class="item2">
+                    <a href="sub2.html" class="dp1">메인메뉴2</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="">서브메뉴21</a></li>
+                        <li class="sb_item2"><a href="">서브메뉴22</a></li>
+                        <li class="sb_item3"><a href="">서브메뉴23</a></li>
+                        <li class="sb_item4"><a href="">서브메뉴24</a></li>
+                    </ul> 
+                </li>
+                <li class="item3">
+                    <a href="" class="dp1">주메뉴3</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="">서브메뉴31</a></li>
+                        <li class="sb_item2"><a href="">서브메뉴32</a></li>
+                        <li class="sb_item3"><a href="">서브메뉴33</a></li>
+                        <li class="sb_item4"><a href="">서브메뉴34</a></li>
+                    </ul> 
+                </li>
+                <li class="item4">
+                    <a href="" class="dp1">핫이슈메뉴4</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="">서브메뉴41</a></li>
+                        <li class="sb_item2"><a href="">서브메뉴42</a></li>
+                        <li class="sb_item3"><a href="">서브메뉴43</a></li>
+                        <li class="sb_item4"><a href="">서브메뉴44</a></li>
+                    </ul> 
+                </li>
+                <li class="item5">
+                    <a href="" class="dp1">메뉴5</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="">서브메뉴51</a></li>
+                        <li class="sb_item2"><a href="">서브메뉴52</a></li>
+                        <li class="sb_item3"><a href="">서브메뉴53</a></li>
+                        <li class="sb_item4"><a href="">서브메뉴54</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- 주요이벤트, 회사슬로건, 대표이미지, 홍보타켓제품이미지 크게 -->
+<aside id="local" class="left">
+    <h2 class="sub_title">메인메뉴2</h2>
+    <nav id="lnb">
+        <ul class="local_menu">
+            <li class="item1"><a href="#page1">서브메뉴21</a></li>
+            <li class="item2"><a href="#page2">서브메뉴22</a></li>
+            <li class="item3"><a href="#page3">서브메뉴23</a></li>
+            <li class="item4"><a href="#page4">서브메뉴24</a></li>
+        </ul>
+    </nav>
+</aside>    
+<main id="content" class="right">
+    <div class="breadcrumb">
+        <p class="cur"><a href="index.html">&nbsp;</a><span>서브2</span></p>
+    </div>
+    <figure id="vs">
+        <img src="https://placehold.it/900x300/333" alt="널링임시이미지">
+    </figure>
+    <!-- 메인메뉴에 있는 서브 페이지의 요약 내용 -->
+    <div class="page" id="page1">
+        <div class="page_wrap">
+            <h3 class="page_title">회원가입</h3>
+            <form action="" id="frm1" method="post" class="form_in">
+                <div class="field">
+                    <label for="m_name">성명</label>
+                    <input type="text" id="m_name" class="data_f" placeholder="성명을 입력해주세요">
+                </div>
+                <div class="field">
+                    <label for="m_id">아이디</label>
+                    <input type="text" id="m_id" class="data_f" placeholder="아이디를 입력해주세요">
+                </div>
+                <div class="field">
+                    <label for="m_pw">암호</label>
+                    <input type="password" id="m_pw" class="data_f" placeholder="암호를 입력해주세요">
+                </div>
+                <div class="field">
+                    <label for="m_pw2">암호확인</label>
+                    <input type="password" id="m_pw2" class="data_f" placeholder="암호확인을 입력해주세요">
+                </div>
+                <div class="field">
+                    <label for="m_email">이메일</label>
+                    <input type="email" id="m_email" class="data_f2" placeholder="이메일을 입력해주세요">
+                    <span class="frm_div">@</span>
+                    <select name="email_sel" id="email_sel" class="data_f2">
+                        <option value="">선택안함</option>
+                        <option value="naver.com">네이버</option>
+                        <option value="daum.net">다음</option>
+                        <option value="gmail.com">지메일</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="m_hp">연락처</label>
+                    <input type="tel" id="m_hp" class="data_f" placeholder="연락처를 입력해주세요">
+                </div>
+                <div class="field">
+                    <label for="">성별</label>
+                    <input type="radio" name="male" id="sex1" class="frm_ra" checked>
+                    <label for="sex1">여성</label> 
+                    <input type="radio" name="male" id="sex2" class="frm_ra">
+                    <label for="sex2">남성</label> 
+                </div>
+                <div class="field">
+                    <input type="submit" value="회원가입" class="frm_btn">
+                    <input type="reset" value="가입취소" class="frm_btn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="page" id="page2">
+        <div class="page_wrap">
+
+        </div>
+    </div>
+    <div class="page" id="page3">
+        <div class="page_wrap">
+
+        </div>
+    </div>
+    <div class="page" id="page4">
+        <div class="page_wrap">
+
+        </div>
+    </div>
+</main>
+<footer class="ft">
+    <div class="h100_wrap">
+        <nav class="fnb">
+            <ul class="menu">
+                <li class="item1"><a href="">이용약관</a></li>
+                <li class="item2"><a href="">개인정보취급방침</a></li>
+                <li class="item3"><a href="">회원가입안내</a></li>
+                <li class="item4"><a href="">오시는길</a></li>
+                <li class="item5"><a href="">XX소개</a></li>
+            </ul>
+        </nav>
+        <div class="ft_logo"></div>
+        <p class="copyright">Since 2019 All Copyrights by jang</p>
+        <div class="sel_box">
+            <select name="sel1" id="sel1">
+                <option value="">선택안함</option>
+                <option value="http://www.naver.com">네이버</option>
+                <option value="http://www.daum.net">다음</option>
+                <option value="http://www.google.com">구글</option>
+            </select>
+        </div>
+    </div>
+</footer>
+</head>
+<body>
+    
+</body>
+</html>
