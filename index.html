@@ -35,7 +35,7 @@
     .img_box li.item2{background-image: url();}
     .item2 img{display: block;position: relative;width: 250px;height: 300px;margin: 0 auto;margin-top: 3em;}
     .img_box li.item3{background-image: url();}
-   #page4 li{background: rgb(211, 211, 211);background-size: 50px;}
+   #page4 li{background-image: url();background-repeat: no-repeat;}
     #page5{background-image: url("./img/contact.png");background-repeat: no-repeat;background-size: cover;width: 100%;height: 100vh;}
     .vs{width: 100%;height: 100%;clear: both;position: relative;}
     .vs_tit{padding-top: 3em;text-align: center;font-size: 7em;color: #fff;font-weight: 400;font-family:"Kalam"}    
@@ -61,8 +61,9 @@
     .more{padding-left: 17em;color: goldenrod;}
     #page5 button a{font-size: 3em;display: block;float: left;color: goldenrod;padding-left: 4em;}
     #page5 button a:hover{color: #fff;transition: 0.6s;}
-    .ft_nav button{display: block;margin: 0 auto;font-size: 4em;color: #999;cursor: pointer;}
-    .ft_nav button:hover{border: 1px solid #999;height: 100px;width: 150px;transition: 0.5s;}
+    .ft_nav button{display: block;margin: 0 auto;font-size: 4em;color: #fff;cursor: pointer;}
+    .ft_nav button a {color: #fff;}
+    .ft_nav button:hover{border: 1px solid #999;height: 100px;width: 150px;transition: 0.5s;background: #999;border-radius: 4em;}
      .name_box{text-align: center;font-size: 15px;line-height: 30px;}
      .infobox{font-size: 15px;text-align: center;margin-top: 2em;}
     .ex{font-size: 11px;color: goldenrod;margin-left: 23em;}
@@ -103,7 +104,8 @@ font-size: 2rem;text-align: center;}
 .progress svg:nth-child(2) { position: absolute;left: 0;top: 0;transform: rotate(-90deg);-webkit-transform: rotate(-90deg);
 -moz-transform: rotate(-90deg);-ms-transform: rotate(-90deg);}
 .progress svg:nth-child(2) path {fill: none;stroke-width: 25;stroke-dasharray: 629;stroke: rgba(255, 255, 255, 0.9);
--webkit-animation: load 10s;-moz-animation: load 10s;-o-animation: load 10s;animation: load 10s;}
+-webkit-animation: load 40s;-moz-animation: load 40s;-o-animation: load 40s;animation: load 40s;}
+    
     </style>
     <script>
     $(document).ready(function(){
@@ -271,13 +273,13 @@ font-size: 2rem;text-align: center;}
                     <p class="vs_com2">프레임 워크 및 그래픽스 툴을 이용한 작업과, 모바일 웹&앱 디자인 포트폴리오를 소개합니다.</p>
                         <ul class="mobile" data-group="1">
                           <h3 class="nb">01.Mobile Web & Responsive Web</h3>
-                          <li class="it1"><a href="./m1/index.html"><img src="./img/mweb1.jpg" alt=""></a>
-                          <li class="it2"><a href="./m2/index.html"><img src="./img/mweb2.jpg" alt=""></a>
+                          <li class="it1"><a href="https://junhui4189.github.io/m1/"><img src="./img/mweb1.jpg" alt=""></a>
+                          <li class="it2"><a href="https://junhui4189.github.io/m2/index.html"><img src="./img/mweb2.jpg" alt=""></a>
                           <li class="it3"><a href="https://junhui4189.github.io/genesis/"><img src="./img/desk.jpg" alt=""></a>
                           <li class="it4"><a href="http://junhui4189.cafe24.com/"><img src="./img/cafe24.jpg" alt=""></a>
-                            <li class="it5"><a href="./r1/index.html"><img src="./img/rwp1.jpg" alt=""></a>
-                              <li class="it6"><a href="./r6/index.html"><img src="./img/rwp2.jpg" alt=""></a>
-                                <li class="it7"><a href="./r9/index.html"><img src="./img/rwp3.jpg" alt=""></a>
+                            <li class="it5"><a href="https://junhui4189.github.io/r1/"><img src="./img/rwp1.jpg" alt=""></a>
+                              <li class="it6"><a href="https://junhui4189.github.io/r6/"><img src="./img/rwp2.jpg" alt=""></a>
+                                <li class="it7"><a href="https://junhui4189.github.io/r9/"><img src="./img/rwp3.jpg" alt=""></a>
                           </ul>
 
                     <!-- 모바일, 데스크탑, 반응형 나머지 완성 후 목업이미지포함 태그 넣기 li>a>item.img -->
@@ -289,19 +291,21 @@ font-size: 2rem;text-align: center;}
                     <p class="more">――――――――――――――</p>
                         <p class="vs_com4">제작자 에 대한 연락처 입니다.</p>
                         <h3 class="intro">Mobile : +82 10 4189 0635<br> Location : 150, Daejeon Seogu Daedeogdaelo, South Korea
-                        <br>E-mail : junhui4189@daum.net</h3>
+                        <br>E-mail : junhui4189@daum.net |or| junhui4189@gmail.com</h3>
                         <button><a href="https://www.facebook.com/people/%EC%9E%A5%EC%A4%80%ED%9D%AC/100003096026019"><i class="xi-facebook"></i></a></button>
                         <button><a href="http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-"><i class="xi-kakaotalk"></i></a></button>
+                        <button><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="xi-gmail"></i></a></button>
                         <h2 class="ex">(카카오톡의 경우 로그인 또는 QR코드를 입력하셔야 연동됩니다.)<br><a href="http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-">http://qr.kakao.com/talk/yDdVZshXX6vMitAnX4MAr87dfFk-</a></h2>
-                        <!-- 폼요소 선택자 넣기 -->
+
                     </li>
                     
         </div>
     </figure>
         <footer class="ft">
             <ul class="ft_nav">
-                <li class="address"><span>궁금하신 것이 있으시면 언제든지 연락 주세요.</span> </li>
-                    <button><i class="xi-mail"></i></button>
+                <li class="address"><span>궁금하신 것이 있으시면 언제든지 연락 주세요.</span>
+                    <button><a href="https://mail.daum.net/#?composer"><i class="xi-mail"></i></a> </button>
+                  </li>
             </ul>
             <p class="copy">JUNHEE-JANG 2019. All Rights Reserved</p>
         </footer>
